@@ -56,33 +56,6 @@ A full stack enterprise Document Management System built with React, Node.js, an
 
 ---
 
-## Project Structure
-
-dms-assignment/          # React frontend
-├── src/
-│   ├── api/             # API calls to backend
-│   ├── components/      # Reusable UI components
-│   ├── context/         # React Context (Auth, Documents)
-│   ├── layouts/         # Admin and User layouts
-│   ├── pages/
-│   │   ├── admin/       # Users, Departments, Categories, Activity
-│   │   └── user/        # Document list and detail
-│   └── utils/           # Access control logic
-├── tests/               # Playwright E2E tests
-└── public/
-dms-backend/             # Node.js backend
-├── src/
-│   ├── db/              # PostgreSQL, Redis, Cassandra connections
-│   ├── middleware/      # JWT auth, metrics middleware
-│   ├── routes/          # API route handlers
-│   └── services/        # S3, Kafka, Prometheus metrics
-├── docker-compose.yml   # All infrastructure services
-└── prometheus.yml       # Prometheus scrape config
-dms-python-consumer/     # Python Kafka consumer
-└── consumer.py          # Reads events, calls Groq AI, saves translation
-
----
-
 ## Getting Started
 
 ### Prerequisites
