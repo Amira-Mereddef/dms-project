@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.log
+test-results/
+playwright-report/
+dms-backend/node_modules/
+dms-python-consumer/__pycache__/
+dms-python-consumer/venv/

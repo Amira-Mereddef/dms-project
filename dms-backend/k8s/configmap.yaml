@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dms-config
+  namespace: dms
+data:
+  PORT: "4000"
+  PG_HOST: "postgres-service"
+  PG_PORT: "5432"
+  PG_USER: "dms"
+  PG_DATABASE: "dmsdb"
+  REDIS_URL: "redis://redis-service:6379"
+  CASSANDRA_HOST: "cassandra-service"
+  CASSANDRA_KEYSPACE: "dms_keyspace"
+  S3_ENDPOINT: "http://minio-service:9000"
+  S3_BUCKET: "dms-documents"
+  S3_REGION: "us-east-1"
+  KAFKA_BROKER: "kafka-service:9092"
